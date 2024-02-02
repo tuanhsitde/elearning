@@ -1,0 +1,14 @@
+.btn-white {
+  @include styleButton($color-gray-0, $color-white, $color-black-light, $font-size-0, $font-weight-1, $pd-0 - 2, $pd-0 + 5);
+  border-radius: 5px;
+  &:hover {
+    @include hoverButton($color-white,$color-red-0, transparent);
+  }
+}
+.btn-red {
+  @include styleButton($color-white, $color-red-0, $color-black-light, $font-size-0, $font-weight-1, $pd-0 - 2, $pd-0 + 5);
+  border-radius: 5px;
+  &:hover {
+    @include hoverButton($color-red-0,$color-white, $color-black-light);
+  }
+}
