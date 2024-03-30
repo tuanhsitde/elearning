@@ -12,3 +12,10 @@
     @include hoverButton($color-red-0,$color-white, $color-black-light);
   }
 }
+.btn-drop {
+  @include styleButton($color-gray-0, $color-white, $color-black-light, $font-size-1, $font-weight-1, $pd-0 - 4, $pd-1 + 5);
+  border-radius: 5px;
+  &:hover {
+    @include hoverButton($color-white,$color-red-0, transparent);
+  }
+}

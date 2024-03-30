@@ -26,55 +26,18 @@
       flex-grow: 8;
       text-align: center;
       transition: none;
-      .input-group {
-        background-color: $color-white-1;
-        border-radius: 5px;
-        input {
-          background-color: transparent;
-          border-color: transparent;
-          box-shadow: none;
-          color: $color-black-light;
-          &::placeholder {
-            color: $color-black-light;
-          }
-          &:focus {
-            background-color: $color-white;
-            border-top-color: $color-border-2;
-            border-left-color: $color-border-2;
-            border-bottom-color: $color-border-2;
-          }
-          &:focus + span {
-            background-color: $color-white;
-            border-top-color: $color-border-2;
-            border-bottom-color: $color-border-2;
-            border-right-color: $color-border-2;
-            &:hover {
-              background-color: $color-red-0;
-              border-color: $color-red-0;
-              border-radius: 5px;
-            }
-          }
-        }
-        span {
-          background-color: transparent;
-          border-color: transparent;
-          color: $color-red-0;
-          //transition: 0.5s;
-          &:hover {
-            color: $color-white;
-            background-color: $color-red-0;
-          }
-        }
-      }
+      @include styleFormSearch($color-white-1, $color-white, $color-border-2);
     }
   }
   .headerNavbar__right {
+    padding-right: 1.5rem;
     .navbar-nav {
       justify-content: space-between;
       align-items: center;
       .item__business {
         position: relative;
         border-radius: $border-radius + 1;
+        white-space: nowrap;
         &:hover {
           background-color: $color-border-1;
           .overlay {
@@ -97,6 +60,7 @@
         position: absolute;
         right: 0;
         top: 45px;
+        z-index: 10;
         border-top: 1px solid $color-border-1;
         box-shadow: 0 4px 16px $color-border-1, 0 -1px 16px $color-border-1;
         border-radius: $border-radius;
@@ -118,7 +82,7 @@
           border-left: 1px solid $color-border-1;
           right: 8%;
           top: -8px;
-          z-index: 10;
+          z-index: 1;
         }
 
       }
@@ -136,6 +100,32 @@
           font-size: $font-size-3 + 2;
         }
       }
+      li:last-child {
+        .nav-link {
+          display: flex;
+          button {
+            white-space: nowrap;
+            &:first-child {
+              margin-right: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+  //@media screen and (min-width: 1200px ) and (max-width: 1286px) {
+  //  .headerNavbar {
+  //    padding-left: 0;
+  //  }
+  //}
+  @include responsive('extra-large') {
+    .headerNavbar__right {
+      .navbar-nav {
+        .item__business {
+          display: none;
+        }
+      }
     }
   }
 }
+

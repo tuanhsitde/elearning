@@ -1,0 +1,26 @@
+.job {
+  background-color: $color-gray-3;
+  padding-top: $pd-0;
+  padding-bottom: 50px;
+  .job__content {
+    .col-6 {
+      .job__item {
+        max-width: 400px;
+        height: 100%;
+        margin: 0 auto;
+        text-align: center;
+        position: relative;
+        button {
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          transform: translate(-50%, 90%);
+          width: 60%;
+        }
+        h4 {
+          @include styleText($color-black-light, $font-size-3, $font-weight-1);
+        }
+      }
+    }
+  }
+}

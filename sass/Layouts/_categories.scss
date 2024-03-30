@@ -1,0 +1,23 @@
+.categories {
+  .categories__content {
+    width: 95%;
+    margin: 0 auto;
+    h2 {
+      @include styleText($color-black-0, $font-size-5, $font-weight-0);
+      margin-bottom: $mg-0 + 5;
+    }
+    .categories__detail {
+      .categories__item {
+        padding: $pd-0;
+        font-size: $font-size-3;
+        border: 1px solid $color-border-1;
+        border-radius: 2px;
+        margin: 0 $mg-2 $mg-2 - 5 0;
+        &:hover {
+          box-shadow: 0 0 1px 1px $color-border-1, 0 3px 1px 0 $color-border-1;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

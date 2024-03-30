@@ -17,6 +17,10 @@
     <!-- bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 
+    <!-- owlcarousel-->
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+
     <!-- main css -->
     <link rel="stylesheet" href="./css/main.css">
 </head>
@@ -24,7 +28,7 @@
 <!--header-->
     <header>
         <nav class="headerNavbar navbar navbar-expand-lg">
-            <div class="col-7">
+            <div class="col-lg-9 col-xl-7">
                 <div class="headerNavbar__left">
                     <a class="navbar-brand" href="#">
                         <img src="./img/logo-coral.svg" alt="logo">
@@ -37,14 +41,13 @@
                         <div class="input-group">
                             <input type="text" class="form-control" placeholder="Search For Courses">
                             <span class="input-group-text" id="basic-addon2">
-                                <i class="fa fa-search"></i>
-                            </span>
+                                    <i class="fa fa-search"></i>
+                                </span>
                         </div>
-
                     </form>
                 </div>
             </div>
-            <div class="col-5 px-3">
+            <div class="col-lg-3 col-xl-5 reset--pd">
                 <div class="headerNavbar__right">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item item__business">
@@ -78,45 +81,1614 @@
             </button>
         </nav>
     </header>
+
 <!--cover-->
     <section class="cover">
-
+        <div class="cover__content">
+            <h1>Learn on your schedule</h1>
+            <p>Study and topic, anytime. Explore thousands of courses for as low as 19.9$</p>
+            <form class="cover__form">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="What do you want to learn">
+                    <span class="input-group-text" id="basic-addon2">
+                        <i class="fa fa-search"></i>
+                    </span>
+                </div>
+            </form>
+        </div>
     </section>
 <!--intro-->
     <section class="intro">
-
+        <div class="intro__content">
+            <div class="row container mx-auto">
+                <div class="col-4">
+                    <div class="intro__item">
+                        <div class="intro__icon">
+                            <i class="fa-solid fa-bullseye"></i>
+                        </div>
+                        <div class="intro__detail">
+                            <p>80.000 online courses</p>
+                            <p>Explore a variety of fresh topics.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="intro__item">
+                        <div class="intro__icon">
+                            <i class="fa-solid fa-spinner"></i>
+                        </div>
+                        <div class="intro__detail">
+                            <p>Expert instruction</p>
+                            <p>Find the instructor for you.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="intro__item">
+                        <div class="intro__icon">
+                            <i class="fa-solid fa-rotate"></i>
+                        </div>
+                        <div class="intro__detail">
+                            <p>Lifetime access</p>
+                            <p>Learn on your schedule</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 <!--courses-->
     <section class="course">
-
+        <div class="course__content">
+            <div class="row">
+                <div class="col-4">
+                    <div class="course__left">
+                        <h3>The world's largest selection of courses</h3>
+                        <p>Choose form over 80.000 online video courses with new additions published every month</p>
+                    </div>
+                </div>
+                <div class="col-8">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="dev-tab" data-bs-toggle="tab" data-bs-target="#development" type="button" role="tab">Development</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="design-tab" data-bs-toggle="tab" data-bs-target="#design" type="button" role="tab">Design</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="business-tab" data-bs-toggle="tab" data-bs-target="#business" type="button" role="tab">Business</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="it-tab" data-bs-toggle="tab" data-bs-target="#it" type="button" role="tab">IT</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="personal-tab" data-bs-toggle="tab" data-bs-target="#personal" type="button" role="tab">Personal</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="marketing-tab" data-bs-toggle="tab" data-bs-target="#marketing" type="button" role="tab">Marketing</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="photography-tab" data-bs-toggle="tab" data-bs-target="#photography" type="button" role="tab">Photography</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="development" role="tabpanel" tabindex="0">
+                            <div class="owl-carousel owl-theme course__carousel">
+                                <div class="card">
+                                    <img src="./img/kh1.jpg" class="card-img-top" alt="khoa hoc 1">
+                                    <div class="card-body">
+                                        <h5 class="card-title">The Ultimate MySQL Bootcamp: GO from Beginner to Expert</h5>
+                                        <p class="card-text">Colt Steele Ian Schonover</p>
+                                        <div class="course__rating">
+                                            <span>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            </span>
+                                            <span>4.6</span>
+                                            <span>(11.597)</span>
+                                        </div>
+                                        <div class="course__price">
+                                            <span>179.99$</span>
+                                            <span>9.99$</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="./img/kh2.jpg" class="card-img-top" alt="khoa hoc 2">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Learning Python for Data Analyst and Visualization </h5>
+                                        <p class="card-text">Jose Portilla</p>
+                                        <div class="course__rating">
+                                            <span>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            </span>
+                                            <span>4.6</span>
+                                            <span>(11.597)</span>
+                                        </div>
+                                        <div class="course__price">
+                                            <span>179.99$</span>
+                                            <span>9.99$</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="./img/kh3.jpg" class="card-img-top" alt="khoa hoc 3">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Advanced CSS and Sass: Flexbox, Grid, Animations and More!</h5>
+                                        <p class="card-text">Jonas Schmedtman</p>
+                                        <div class="course__rating">
+                                            <span>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            </span>
+                                            <span>4.6</span>
+                                            <span>(11.597)</span>
+                                        </div>
+                                        <div class="course__price">
+                                            <span>179.99$</span>
+                                            <span>9.99$</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="./img/kh4.jpg" class="card-img-top" alt="khoa hoc 4">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Modern Javascript From The Beginning</h5>
+                                        <p class="card-text">Brad Travelsy</p>
+                                        <div class="course__rating">
+                                            <span>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            </span>
+                                            <span>4.6</span>
+                                            <span>(11.597)</span>
+                                        </div>
+                                        <div class="course__price">
+                                            <span>179.99$</span>
+                                            <span>9.99$</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="./img/kh5.jpg" class="card-img-top" alt="khoa hoc 5">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Bootstrap 4 From Scratch With 5 Projects</h5>
+                                        <p class="card-text">Tom Deptrai</p>
+                                        <div class="course__rating">
+                                            <span>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            </span>
+                                            <span>4.6</span>
+                                            <span>(11.597)</span>
+                                        </div>
+                                        <div class="course__price">
+                                            <span>179.99$</span>
+                                            <span>9.99$</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="./img/kh6.jpg" class="card-img-top" alt="khoa hoc 6">
+                                    <div class="card-body">
+                                        <h5 class="card-title">iOS 12 & Swift - The Complete iOS App Development</h5>
+                                        <p class="card-text">Yu Stachse</p>
+                                        <div class="course__rating">
+                                            <span>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            </span>
+                                            <span>4.6</span>
+                                            <span>(11.597)</span>
+                                        </div>
+                                        <div class="course__price">
+                                            <span>179.99$</span>
+                                            <span>9.99$</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="design" role="tabpanel" tabindex="0">
+                            <div class="owl-carousel owl-theme course__carousel">
+                                <div class="card">
+                                    <img src="./img/kh7.jpg" class="card-img-top" alt="khoa hoc 1">
+                                    <div class="card-body">
+                                        <h5 class="card-title">The Ultimate MySQL Bootcamp: GO from Beginner to Expert</h5>
+                                        <p class="card-text">Colt Steele Ian Schonover</p>
+                                        <div class="course__rating">
+                                            <span>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            </span>
+                                            <span>4.6</span>
+                                            <span>(11.597)</span>
+                                        </div>
+                                        <div class="course__price">
+                                            <span>179.99$</span>
+                                            <span>9.99$</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="./img/kh8.jpg" class="card-img-top" alt="khoa hoc 2">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Learning Python for Data Analyst and Visualization </h5>
+                                        <p class="card-text">Jose Portilla</p>
+                                        <div class="course__rating">
+                                            <span>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            </span>
+                                            <span>4.6</span>
+                                            <span>(11.597)</span>
+                                        </div>
+                                        <div class="course__price">
+                                            <span>179.99$</span>
+                                            <span>9.99$</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="./img/kh9.jpg" class="card-img-top" alt="khoa hoc 3">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Advanced CSS and Sass: Flexbox, Grid, Animations and More!</h5>
+                                        <p class="card-text">Jonas Schmedtman</p>
+                                        <div class="course__rating">
+                                            <span>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            </span>
+                                            <span>4.6</span>
+                                            <span>(11.597)</span>
+                                        </div>
+                                        <div class="course__price">
+                                            <span>179.99$</span>
+                                            <span>9.99$</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="./img/kh10.jpg" class="card-img-top" alt="khoa hoc 4">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Modern Javascript From The Beginning</h5>
+                                        <p class="card-text">Brad Travelsy</p>
+                                        <div class="course__rating">
+                                            <span>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            </span>
+                                            <span>4.6</span>
+                                            <span>(11.597)</span>
+                                        </div>
+                                        <div class="course__price">
+                                            <span>179.99$</span>
+                                            <span>9.99$</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="./img/kh5.jpg" class="card-img-top" alt="khoa hoc 5">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Bootstrap 4 From Scratch With 5 Projects</h5>
+                                        <p class="card-text">Tom Deptrai</p>
+                                        <div class="course__rating">
+                                            <span>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            </span>
+                                            <span>4.6</span>
+                                            <span>(11.597)</span>
+                                        </div>
+                                        <div class="course__price">
+                                            <span>179.99$</span>
+                                            <span>9.99$</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="./img/kh6.jpg" class="card-img-top" alt="khoa hoc 6">
+                                    <div class="card-body">
+                                        <h5 class="card-title">iOS 12 & Swift - The Complete iOS App Development</h5>
+                                        <p class="card-text">Yu Stachse</p>
+                                        <div class="course__rating">
+                                            <span>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            </span>
+                                            <span>4.6</span>
+                                            <span>(11.597)</span>
+                                        </div>
+                                        <div class="course__price">
+                                            <span>179.99$</span>
+                                            <span>9.99$</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="business" role="tabpanel" tabindex="0">
+                            <div class="owl-carousel owl-theme course__carousel">
+                                <div class="card">
+                                    <img src="./img/kh1.jpg" class="card-img-top" alt="khoa hoc 1">
+                                    <div class="card-body">
+                                        <h5 class="card-title">The Ultimate MySQL Bootcamp: GO from Beginner to Expert</h5>
+                                        <p class="card-text">Colt Steele Ian Schonover</p>
+                                        <div class="course__rating">
+                                            <span>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            </span>
+                                            <span>4.6</span>
+                                            <span>(11.597)</span>
+                                        </div>
+                                        <div class="course__price">
+                                            <span>179.99$</span>
+                                            <span>9.99$</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="./img/kh2.jpg" class="card-img-top" alt="khoa hoc 2">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Learning Python for Data Analyst and Visualization </h5>
+                                        <p class="card-text">Jose Portilla</p>
+                                        <div class="course__rating">
+                                            <span>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            </span>
+                                            <span>4.6</span>
+                                            <span>(11.597)</span>
+                                        </div>
+                                        <div class="course__price">
+                                            <span>179.99$</span>
+                                            <span>9.99$</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="./img/kh3.jpg" class="card-img-top" alt="khoa hoc 3">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Advanced CSS and Sass: Flexbox, Grid, Animations and More!</h5>
+                                        <p class="card-text">Jonas Schmedtman</p>
+                                        <div class="course__rating">
+                                            <span>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            </span>
+                                            <span>4.6</span>
+                                            <span>(11.597)</span>
+                                        </div>
+                                        <div class="course__price">
+                                            <span>179.99$</span>
+                                            <span>9.99$</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="./img/kh4.jpg" class="card-img-top" alt="khoa hoc 4">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Modern Javascript From The Beginning</h5>
+                                        <p class="card-text">Brad Travelsy</p>
+                                        <div class="course__rating">
+                                            <span>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            </span>
+                                            <span>4.6</span>
+                                            <span>(11.597)</span>
+                                        </div>
+                                        <div class="course__price">
+                                            <span>179.99$</span>
+                                            <span>9.99$</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="./img/kh5.jpg" class="card-img-top" alt="khoa hoc 5">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Bootstrap 4 From Scratch With 5 Projects</h5>
+                                        <p class="card-text">Tom Deptrai</p>
+                                        <div class="course__rating">
+                                            <span>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            </span>
+                                            <span>4.6</span>
+                                            <span>(11.597)</span>
+                                        </div>
+                                        <div class="course__price">
+                                            <span>179.99$</span>
+                                            <span>9.99$</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="./img/kh6.jpg" class="card-img-top" alt="khoa hoc 6">
+                                    <div class="card-body">
+                                        <h5 class="card-title">iOS 12 & Swift - The Complete iOS App Development</h5>
+                                        <p class="card-text">Yu Stachse</p>
+                                        <div class="course__rating">
+                                            <span>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            </span>
+                                            <span>4.6</span>
+                                            <span>(11.597)</span>
+                                        </div>
+                                        <div class="course__price">
+                                            <span>179.99$</span>
+                                            <span>9.99$</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="it" role="tabpanel" tabindex="0">
+                            <div class="owl-carousel owl-theme course__carousel">
+                                <div class="card">
+                                    <img src="./img/kh1.jpg" class="card-img-top" alt="khoa hoc 1">
+                                    <div class="card-body">
+                                        <h5 class="card-title">The Ultimate MySQL Bootcamp: GO from Beginner to Expert</h5>
+                                        <p class="card-text">Colt Steele Ian Schonover</p>
+                                        <div class="course__rating">
+                                            <span>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            </span>
+                                            <span>4.6</span>
+                                            <span>(11.597)</span>
+                                        </div>
+                                        <div class="course__price">
+                                            <span>179.99$</span>
+                                            <span>9.99$</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="./img/kh2.jpg" class="card-img-top" alt="khoa hoc 2">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Learning Python for Data Analyst and Visualization </h5>
+                                        <p class="card-text">Jose Portilla</p>
+                                        <div class="course__rating">
+                                            <span>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            </span>
+                                            <span>4.6</span>
+                                            <span>(11.597)</span>
+                                        </div>
+                                        <div class="course__price">
+                                            <span>179.99$</span>
+                                            <span>9.99$</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="./img/kh3.jpg" class="card-img-top" alt="khoa hoc 3">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Advanced CSS and Sass: Flexbox, Grid, Animations and More!</h5>
+                                        <p class="card-text">Jonas Schmedtman</p>
+                                        <div class="course__rating">
+                                            <span>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            </span>
+                                            <span>4.6</span>
+                                            <span>(11.597)</span>
+                                        </div>
+                                        <div class="course__price">
+                                            <span>179.99$</span>
+                                            <span>9.99$</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="./img/kh4.jpg" class="card-img-top" alt="khoa hoc 4">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Modern Javascript From The Beginning</h5>
+                                        <p class="card-text">Brad Travelsy</p>
+                                        <div class="course__rating">
+                                            <span>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            </span>
+                                            <span>4.6</span>
+                                            <span>(11.597)</span>
+                                        </div>
+                                        <div class="course__price">
+                                            <span>179.99$</span>
+                                            <span>9.99$</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="./img/kh5.jpg" class="card-img-top" alt="khoa hoc 5">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Bootstrap 4 From Scratch With 5 Projects</h5>
+                                        <p class="card-text">Tom Deptrai</p>
+                                        <div class="course__rating">
+                                            <span>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            </span>
+                                            <span>4.6</span>
+                                            <span>(11.597)</span>
+                                        </div>
+                                        <div class="course__price">
+                                            <span>179.99$</span>
+                                            <span>9.99$</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="./img/kh6.jpg" class="card-img-top" alt="khoa hoc 6">
+                                    <div class="card-body">
+                                        <h5 class="card-title">iOS 12 & Swift - The Complete iOS App Development</h5>
+                                        <p class="card-text">Yu Stachse</p>
+                                        <div class="course__rating">
+                                            <span>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            </span>
+                                            <span>4.6</span>
+                                            <span>(11.597)</span>
+                                        </div>
+                                        <div class="course__price">
+                                            <span>179.99$</span>
+                                            <span>9.99$</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="personal" role="tabpanel" tabindex="0">
+                            <div class="owl-carousel owl-theme course__carousel">
+                                <div class="card">
+                                    <img src="./img/kh1.jpg" class="card-img-top" alt="khoa hoc 1">
+                                    <div class="card-body">
+                                        <h5 class="card-title">The Ultimate MySQL Bootcamp: GO from Beginner to Expert</h5>
+                                        <p class="card-text">Colt Steele Ian Schonover</p>
+                                        <div class="course__rating">
+                                            <span>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            </span>
+                                            <span>4.6</span>
+                                            <span>(11.597)</span>
+                                        </div>
+                                        <div class="course__price">
+                                            <span>179.99$</span>
+                                            <span>9.99$</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="./img/kh2.jpg" class="card-img-top" alt="khoa hoc 2">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Learning Python for Data Analyst and Visualization </h5>
+                                        <p class="card-text">Jose Portilla</p>
+                                        <div class="course__rating">
+                                            <span>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            </span>
+                                            <span>4.6</span>
+                                            <span>(11.597)</span>
+                                        </div>
+                                        <div class="course__price">
+                                            <span>179.99$</span>
+                                            <span>9.99$</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="./img/kh3.jpg" class="card-img-top" alt="khoa hoc 3">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Advanced CSS and Sass: Flexbox, Grid, Animations and More!</h5>
+                                        <p class="card-text">Jonas Schmedtman</p>
+                                        <div class="course__rating">
+                                            <span>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            </span>
+                                            <span>4.6</span>
+                                            <span>(11.597)</span>
+                                        </div>
+                                        <div class="course__price">
+                                            <span>179.99$</span>
+                                            <span>9.99$</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="./img/kh4.jpg" class="card-img-top" alt="khoa hoc 4">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Modern Javascript From The Beginning</h5>
+                                        <p class="card-text">Brad Travelsy</p>
+                                        <div class="course__rating">
+                                            <span>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            </span>
+                                            <span>4.6</span>
+                                            <span>(11.597)</span>
+                                        </div>
+                                        <div class="course__price">
+                                            <span>179.99$</span>
+                                            <span>9.99$</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="./img/kh5.jpg" class="card-img-top" alt="khoa hoc 5">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Bootstrap 4 From Scratch With 5 Projects</h5>
+                                        <p class="card-text">Tom Deptrai</p>
+                                        <div class="course__rating">
+                                            <span>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            </span>
+                                            <span>4.6</span>
+                                            <span>(11.597)</span>
+                                        </div>
+                                        <div class="course__price">
+                                            <span>179.99$</span>
+                                            <span>9.99$</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="./img/kh6.jpg" class="card-img-top" alt="khoa hoc 6">
+                                    <div class="card-body">
+                                        <h5 class="card-title">iOS 12 & Swift - The Complete iOS App Development</h5>
+                                        <p class="card-text">Yu Stachse</p>
+                                        <div class="course__rating">
+                                            <span>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            </span>
+                                            <span>4.6</span>
+                                            <span>(11.597)</span>
+                                        </div>
+                                        <div class="course__price">
+                                            <span>179.99$</span>
+                                            <span>9.99$</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="marketing" role="tabpanel" tabindex="0">
+                            <div class="owl-carousel owl-theme course__carousel">
+                                <div class="card">
+                                    <img src="./img/kh1.jpg" class="card-img-top" alt="khoa hoc 1">
+                                    <div class="card-body">
+                                        <h5 class="card-title">The Ultimate MySQL Bootcamp: GO from Beginner to Expert</h5>
+                                        <p class="card-text">Colt Steele Ian Schonover</p>
+                                        <div class="course__rating">
+                                            <span>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            </span>
+                                            <span>4.6</span>
+                                            <span>(11.597)</span>
+                                        </div>
+                                        <div class="course__price">
+                                            <span>179.99$</span>
+                                            <span>9.99$</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="./img/kh2.jpg" class="card-img-top" alt="khoa hoc 2">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Learning Python for Data Analyst and Visualization </h5>
+                                        <p class="card-text">Jose Portilla</p>
+                                        <div class="course__rating">
+                                            <span>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            </span>
+                                            <span>4.6</span>
+                                            <span>(11.597)</span>
+                                        </div>
+                                        <div class="course__price">
+                                            <span>179.99$</span>
+                                            <span>9.99$</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="./img/kh3.jpg" class="card-img-top" alt="khoa hoc 3">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Advanced CSS and Sass: Flexbox, Grid, Animations and More!</h5>
+                                        <p class="card-text">Jonas Schmedtman</p>
+                                        <div class="course__rating">
+                                            <span>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            </span>
+                                            <span>4.6</span>
+                                            <span>(11.597)</span>
+                                        </div>
+                                        <div class="course__price">
+                                            <span>179.99$</span>
+                                            <span>9.99$</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="./img/kh4.jpg" class="card-img-top" alt="khoa hoc 4">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Modern Javascript From The Beginning</h5>
+                                        <p class="card-text">Brad Travelsy</p>
+                                        <div class="course__rating">
+                                            <span>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            </span>
+                                            <span>4.6</span>
+                                            <span>(11.597)</span>
+                                        </div>
+                                        <div class="course__price">
+                                            <span>179.99$</span>
+                                            <span>9.99$</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="./img/kh5.jpg" class="card-img-top" alt="khoa hoc 5">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Bootstrap 4 From Scratch With 5 Projects</h5>
+                                        <p class="card-text">Tom Deptrai</p>
+                                        <div class="course__rating">
+                                            <span>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            </span>
+                                            <span>4.6</span>
+                                            <span>(11.597)</span>
+                                        </div>
+                                        <div class="course__price">
+                                            <span>179.99$</span>
+                                            <span>9.99$</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="./img/kh6.jpg" class="card-img-top" alt="khoa hoc 6">
+                                    <div class="card-body">
+                                        <h5 class="card-title">iOS 12 & Swift - The Complete iOS App Development</h5>
+                                        <p class="card-text">Yu Stachse</p>
+                                        <div class="course__rating">
+                                            <span>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            </span>
+                                            <span>4.6</span>
+                                            <span>(11.597)</span>
+                                        </div>
+                                        <div class="course__price">
+                                            <span>179.99$</span>
+                                            <span>9.99$</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="photography" role="tabpanel" tabindex="0">
+                            <div class="owl-carousel owl-theme course__carousel">
+                                <div class="card">
+                                    <img src="./img/kh1.jpg" class="card-img-top" alt="khoa hoc 1">
+                                    <div class="card-body">
+                                        <h5 class="card-title">The Ultimate MySQL Bootcamp: GO from Beginner to Expert</h5>
+                                        <p class="card-text">Colt Steele Ian Schonover</p>
+                                        <div class="course__rating">
+                                            <span>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            </span>
+                                            <span>4.6</span>
+                                            <span>(11.597)</span>
+                                        </div>
+                                        <div class="course__price">
+                                            <span>179.99$</span>
+                                            <span>9.99$</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="./img/kh2.jpg" class="card-img-top" alt="khoa hoc 2">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Learning Python for Data Analyst and Visualization </h5>
+                                        <p class="card-text">Jose Portilla</p>
+                                        <div class="course__rating">
+                                            <span>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            </span>
+                                            <span>4.6</span>
+                                            <span>(11.597)</span>
+                                        </div>
+                                        <div class="course__price">
+                                            <span>179.99$</span>
+                                            <span>9.99$</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="./img/kh3.jpg" class="card-img-top" alt="khoa hoc 3">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Advanced CSS and Sass: Flexbox, Grid, Animations and More!</h5>
+                                        <p class="card-text">Jonas Schmedtman</p>
+                                        <div class="course__rating">
+                                            <span>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            </span>
+                                            <span>4.6</span>
+                                            <span>(11.597)</span>
+                                        </div>
+                                        <div class="course__price">
+                                            <span>179.99$</span>
+                                            <span>9.99$</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="./img/kh4.jpg" class="card-img-top" alt="khoa hoc 4">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Modern Javascript From The Beginning</h5>
+                                        <p class="card-text">Brad Travelsy</p>
+                                        <div class="course__rating">
+                                            <span>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            </span>
+                                            <span>4.6</span>
+                                            <span>(11.597)</span>
+                                        </div>
+                                        <div class="course__price">
+                                            <span>179.99$</span>
+                                            <span>9.99$</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="./img/kh5.jpg" class="card-img-top" alt="khoa hoc 5">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Bootstrap 4 From Scratch With 5 Projects</h5>
+                                        <p class="card-text">Tom Deptrai</p>
+                                        <div class="course__rating">
+                                            <span>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            </span>
+                                            <span>4.6</span>
+                                            <span>(11.597)</span>
+                                        </div>
+                                        <div class="course__price">
+                                            <span>179.99$</span>
+                                            <span>9.99$</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="./img/kh6.jpg" class="card-img-top" alt="khoa hoc 6">
+                                    <div class="card-body">
+                                        <h5 class="card-title">iOS 12 & Swift - The Complete iOS App Development</h5>
+                                        <p class="card-text">Yu Stachse</p>
+                                        <div class="course__rating">
+                                            <span>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            </span>
+                                            <span>4.6</span>
+                                            <span>(11.597)</span>
+                                        </div>
+                                        <div class="course__price">
+                                            <span>179.99$</span>
+                                            <span>9.99$</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 <!--viewing-->
-    <section class="viewing">
-
+    <section class="viewing section">
+        <div class="viewing__content">
+            <h2>Students are viewing</h2>
+            <div class="owl-carousel owl-theme viewing_carousel">
+                <div class="card">
+                    <img src="./img/kh8.jpg" class="card-img-top" alt="khoa hoc 1">
+                    <div class="card-body">
+                        <h5 class="card-title">The Ultimate MySQL Bootcamp: GO from Beginner to Expert</h5>
+                        <p class="card-text">Colt Steele Ian Schonover</p>
+                        <div class="course__rating">
+                                            <span>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            </span>
+                            <span>4.6</span>
+                            <span>(11.597)</span>
+                        </div>
+                        <div class="course__price">
+                            <span>179.99$</span>
+                            <span>9.99$</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./img/kh9.jpg" class="card-img-top" alt="khoa hoc 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Learning Python for Data Analyst and Visualization </h5>
+                        <p class="card-text">Jose Portilla</p>
+                        <div class="course__rating">
+                                            <span>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            </span>
+                            <span>4.6</span>
+                            <span>(11.597)</span>
+                        </div>
+                        <div class="course__price">
+                            <span>179.99$</span>
+                            <span>9.99$</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./img/kh10.jpg" class="card-img-top" alt="khoa hoc 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Advanced CSS and Sass: Flexbox, Grid, Animations and More!</h5>
+                        <p class="card-text">Jonas Schmedtman</p>
+                        <div class="course__rating">
+                                            <span>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            </span>
+                            <span>4.6</span>
+                            <span>(11.597)</span>
+                        </div>
+                        <div class="course__price">
+                            <span>179.99$</span>
+                            <span>9.99$</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./img/kh11.jpg" class="card-img-top" alt="khoa hoc 4">
+                    <div class="card-body">
+                        <h5 class="card-title">Modern Javascript From The Beginning</h5>
+                        <p class="card-text">Brad Travelsy</p>
+                        <div class="course__rating">
+                                            <span>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            </span>
+                            <span>4.6</span>
+                            <span>(11.597)</span>
+                        </div>
+                        <div class="course__price">
+                            <span>179.99$</span>
+                            <span>9.99$</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./img/kh12.jpg" class="card-img-top" alt="khoa hoc 5">
+                    <div class="card-body">
+                        <h5 class="card-title">Bootstrap 4 From Scratch With 5 Projects</h5>
+                        <p class="card-text">Tom Deptrai</p>
+                        <div class="course__rating">
+                                            <span>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            </span>
+                            <span>4.6</span>
+                            <span>(11.597)</span>
+                        </div>
+                        <div class="course__price">
+                            <span>179.99$</span>
+                            <span>9.99$</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./img/kh13.jpg" class="card-img-top" alt="khoa hoc 6">
+                    <div class="card-body">
+                        <h5 class="card-title">iOS 12 & Swift - The Complete iOS App Development</h5>
+                        <p class="card-text">Yu Stachse</p>
+                        <div class="course__rating">
+                                            <span>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            </span>
+                            <span>4.6</span>
+                            <span>(11.597)</span>
+                        </div>
+                        <div class="course__price">
+                            <span>179.99$</span>
+                            <span>9.99$</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 <!--banner-->
     <section class="banner">
-
+        <div class="banner__content">
+            <h2>Learn anytime, any where</h2>
+            <p>Take courses on any of your devices </p>
+            <p>Go at your own pace with lifetime access</p>
+            <p>Try risk-free with our 30-days money-back guarantee</p>
+            <button class="btn-red">Sign up for free</button>
+            <div class="row">
+                <div class="col-6 text-end">
+                    <img src="./img/google_btn.png" alt="">
+                </div>
+                <div class="col-6 text-start">
+                    <img src="./img/apple_btn.png" alt="">
+                </div>
+            </div>
+        </div>
     </section>
 <!--categories-->
-    <section class="categories">
-
+    <section class="categories section">
+        <div class="categories__content">
+            <h2>Top Categories</h2>
+            <div class="categories__detail row">
+                <div class="col-3">
+                    <div class="categories__item">
+                        <i class="fa-solid fa-code"></i>
+                        <span>Development</span>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="categories__item">
+                        <i class="fa-solid fa-chart-column"></i>
+                        <span>Business</span>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="categories__item">
+                        <i class="fa fa-laptop-code"></i>
+                        <span>IT and Software</span>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="categories__item">
+                        <i class="fa fa-pencil-alt"></i>
+                        <span>Design</span>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="categories__item">
+                        <i class="fa-solid fa-bullseye"></i>
+                        <span>Marketing</span>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="categories__item">
+                        <i class="fa-solid fa-book"></i>
+                        <span>Personal Development</span>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="categories__item">
+                        <i class="fa fa-camera-retro"></i>
+                        <span>Photography</span>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="categories__item">
+                        <i class="fa fa-music"></i>
+                        <span>Music</span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 <!--feedback-->
-    <section class="feedback">
-
+    <section class="feedback section">
+        <div class="feedback__content">
+            <h2>What our students have to say</h2>
+            <div class="feedback-carousel owl-theme owl-carousel">
+                <div class="item">
+                    <div class="card card--feedback">
+                        <div class="card-body">
+                            <div class="card-top">
+                                <div class="card-avt">
+                                    <img src="./img/meo.jpeg" alt="" >
+                                </div>
+                                <div>
+                                    <p class="card__name">Tuanh</p>
+                                    <div class="course__rating">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="card-text">
+                                I had a couple of months of experience trading without consistent results. After taking this course I'm pretty confident that I'll be a better trader and know better when to enter a trade, how to put my stop loss and take profit, how many lots to trade and much more.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card card--feedback">
+                    <div class="card-body">
+                        <div class="card-top">
+                            <div class="card-avt">
+                                <img src="./img/meo.jpeg" alt="" >
+                            </div>
+                            <div>
+                                <p class="card__name">Tuanh</p>
+                                <div class="course__rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="card-text">
+                            I had a couple of months of experience trading without consistent results. After taking this course I'm pretty confident that I'll be a better trader and know better when to enter a trade, how to put my stop loss and take profit, how many lots to trade and much more.
+                        </p>
+                    </div>
+                </div>
+                </div>
+                <div class="item">
+                    <div class="card card--feedback">
+                        <div class="card-body">
+                            <div class="card-top">
+                                <div class="card-avt">
+                                    <img src="./img/meo.jpeg" alt="" >
+                                </div>
+                                <div>
+                                    <p class="card__name">Tuanh</p>
+                                    <div class="course__rating">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="card-text">
+                                I had a couple of months of experience trading without consistent results. After taking this course I'm pretty confident that I'll be a better trader and know better when to enter a trade, how to put my stop loss and take profit, how many lots to trade and much more.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card card--feedback">
+                        <div class="card-body">
+                            <div class="card-top">
+                                <div class="card-avt">
+                                    <img src="./img/meo.jpeg" alt="" >
+                                </div>
+                                <div>
+                                    <p class="card__name">Tuanh</p>
+                                    <div class="course__rating">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="card-text">
+                                I had a couple of months of experience trading without consistent results. After taking this course I'm pretty confident that I'll be a better trader and know better when to enter a trade, how to put my stop loss and take profit, how many lots to trade and much more.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card card--feedback">
+                        <div class="card-body">
+                            <div class="card-top">
+                                <div class="card-avt">
+                                    <img src="./img/meo.jpeg" alt="" >
+                                </div>
+                                <div>
+                                    <p class="card__name">Tuanh</p>
+                                    <div class="course__rating">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="card-text">
+                                I had a couple of months of experience trading without consistent results. After taking this course I'm pretty confident that I'll be a better trader and know better when to enter a trade, how to put my stop loss and take profit, how many lots to trade and much more.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card card--feedback">
+                        <div class="card-body">
+                            <div class="card-top">
+                                <div class="card-avt">
+                                    <img src="./img/meo.jpeg" alt="" >
+                                </div>
+                                <div>
+                                    <p class="card__name">Tuanh</p>
+                                    <div class="course__rating">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="card-text">
+                                I had a couple of months of experience trading without consistent results. After taking this course I'm pretty confident that I'll be a better trader and know better when to enter a trade, how to put my stop loss and take profit, how many lots to trade and much more.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card card--feedback">
+                        <div class="card-body">
+                            <div class="card-top">
+                                <div class="card-avt">
+                                    <img src="./img/meo.jpeg" alt="" >
+                                </div>
+                                <div>
+                                    <p class="card__name">Tuanh</p>
+                                    <div class="course__rating">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="card-text">
+                                I had a couple of months of experience trading without consistent results. After taking this course I'm pretty confident that I'll be a better trader and know better when to enter a trade, how to put my stop loss and take profit, how many lots to trade and much more.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card card--feedback">
+                        <div class="card-body">
+                            <div class="card-top">
+                                <div class="card-avt">
+                                    <img src="./img/meo.jpeg" alt="" >
+                                </div>
+                                <div>
+                                    <p class="card__name">Tuanh</p>
+                                    <div class="course__rating">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="card-text">
+                                I had a couple of months of experience trading without consistent results. After taking this course I'm pretty confident that I'll be a better trader and know better when to enter a trade, how to put my stop loss and take profit, how many lots to trade and much more.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card card--feedback">
+                        <div class="card-body">
+                            <div class="card-top">
+                                <div class="card-avt">
+                                    <img src="./img/meo.jpeg" alt="" >
+                                </div>
+                                <div>
+                                    <p class="card__name">Tuanh</p>
+                                    <div class="course__rating">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="card-text">
+                                I had a couple of months of experience trading without consistent results. After taking this course I'm pretty confident that I'll be a better trader and know better when to enter a trade, how to put my stop loss and take profit, how many lots to trade and much more.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 <!--partner-->
     <section class="partner">
-
+        <div class="partner__content">
+            <div class="partner__title">
+                <p>Trusted by companies off all sizes</p>
+            </div>
+            <div class="partner__com row container m-auto">
+                <div class="col-2">
+                    <img src="./img/booking.svg" alt="">
+                </div>
+                <div class="col-2">
+                    <img src="./img/volkswagen.svg" alt="">
+                </div>
+                <div class="col-2">
+                    <img src="./img/mercedes.svg" alt="">
+                </div>
+                <div class="col-2">
+                    <img src="./img/pinterest.svg" alt="">
+                </div>
+                <div class="col-2">
+                    <img src="./img/adidas.svg" alt="">
+                </div>
+                <div class="col-2">
+                    <img src="./img/paypal.svg" alt="">
+                </div>
+            </div>
+        </div>
     </section>
 <!--job-->
     <section class="job">
-
+        <div class="job__content row container m-auto">
+            <div class="col-6 border-end">
+                <div class="job__item">
+                    <h4>Become an Instructor</h4>
+                    <p>Top instructors from around the world teach millions of students on Udemy. We provides the tools and skills to teach what you love. </p>
+                    <button class="btn-red">Start teaching today</button>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="job__item">
+                    <h4>Udemy for business</h4>
+                    <p>Get unlimited access to 4.000+ of Udemy's top courses for your team</p>
+                    <button class="btn-red">Get Udemy for business</button>
+                </div>
+            </div>
+        </div>
     </section>
 <!--footer-->
     <footer>
-
+        <div class="footer__top section">
+            <div class="row">
+                <div class="col-9">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link bold" aria-current="page" href="#">Udemy for Business</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link bold" aria-current="page" href="#">Teach on Udemy</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Udemy app</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">About us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Careers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Help and Support</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Affiliate</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Sitemap</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Featured Coursers</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-3">
+                    <div class="dropup-center dropup ms-auto">
+                        <button class="dropdown-toggle btn-drop" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-globe"></i> English
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">English</a></li>
+                            <li><a class="dropdown-item" href="#">English</a></li>
+                            <li><a class="dropdown-item" href="#">English</a></li>
+                            <li><a class="dropdown-item" href="#">English</a></li>
+                            <li><a class="dropdown-item" href="#">English</a></li>
+                            <li><a class="dropdown-item" href="#">English</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="footer__bottom">
+            <div class="row">
+                <div class="col-6">
+                    <img src="./img/logo-coral.svg" alt="">
+                    <span>Copyright &#169; 2024 Udemy, Inc</span>
+                </div>
+                <div class="col-6">
+                    <ul class="nav justify-content-end">
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="#">Terms</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Privacy  and Cookie Policy</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </footer>
 
     <!--jquery-->
@@ -125,5 +1697,63 @@
     <!-- bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 
+    <!--owl carousel-->
+    <script src="./js/owl.carousel.min.js"></script>
+    <script>
+        $('.course__carousel').owlCarousel({
+            loop:true,
+            margin:15,
+            nav:true,
+            dots: false,
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:3
+                },
+                1000:{
+                    items:4
+                }
+            }
+        })
+        $('.viewing_carousel').owlCarousel({
+            loop:true,
+            margin:15,
+            nav:true,
+            dots: false,
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:3
+                },
+                1000:{
+                    items:6
+                }
+            }
+        });
+        $('.feedback-carousel').owlCarousel({
+            loop:true,
+            margin:10,
+            nav:true,
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:3
+                },
+                1000:{
+                    items:3
+                }
+            }
+        })
+    </script>
+
+
+<!--main js-->
+<script src="./js/main.js"></script>
 </body>
 </html>

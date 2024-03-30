@@ -1,0 +1,51 @@
+footer {
+  width: 95%;
+  margin: 0 auto;
+  @include styleText($color-gray-0, $font-size-1, $font-weight-0);
+  .footer__top {
+    .col-9 {
+      .nav {
+        height: 100px;
+        .nav-item {
+          flex-basis: 25%;
+          &:nth-child(1), &:nth-child(2) {
+            font-weight: $font-weight-1;
+          }
+          .nav-link {
+            color: $color-blue-0;
+            padding: 0;
+          }
+        }
+      }
+    }
+    .col-3 {
+      .dropup {
+        .btn-drop {
+          min-width: 160px;
+          i {
+            padding: 0 5px;
+          }
+          &::after {
+            margin-left: 30%;
+          }
+        }
+        .dropdown-menu {
+          .dropdown-item {
+            font-size: $font-size-1;
+          }
+        }
+      }
+    }
+  }
+  .footer__bottom {
+    .row {
+      img {
+        width: 110px;
+        margin-right: 10px;
+      }
+      .nav-link {
+        color: $color-blue-0;
+      }
+    }
+  }
+}

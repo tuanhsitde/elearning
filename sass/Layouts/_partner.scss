@@ -1,0 +1,11 @@
+.partner {
+  padding-bottom: $pd-2;
+  background-color: $color-gray-3;
+  .partner__content {
+    .partner__title {
+      text-align: center;
+      padding-top: $pd-0;
+      @include styleText($color-black-0,$font-size-3, $font-weight-0);
+    }
+  }
+}

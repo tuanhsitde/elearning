@@ -1,19 +1,35 @@
+//Helpers
 @import "./Helpers/variables";
 @import "Helpers/mixin";
+@import "Helpers/extend";
 
 // Vendor
 
-
+//Base
 @import "Base/reset";
 @import "Base/customize";
 
 
 //Layouts
 @import "Layouts/header";
+@import "Layouts/cover";
+@import "Layouts/intro";
+@import "Layouts/course";
+@import "Layouts/viewing";
+@import "Layouts/banner";
+@import "Layouts/categories";
+@import "Layouts/feedback";
+@import "Layouts/partner";
+@import "Layouts/job";
 @import "Layouts/footer";
 
-@import "Components/button";
 
+//Components
+@import "Components/button";
+@import "Components/card";
+
+
+//Pages
 @import "Pages/home";
 
 //Theme

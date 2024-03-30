@@ -1,0 +1,9 @@
+.viewing {
+  .viewing__content {
+    width: 95%;
+    margin: 0 auto;
+    h2 {
+      @include styleText($color-black-0, $font-size-5, $font-weight-0);
+    }
+  }
+}

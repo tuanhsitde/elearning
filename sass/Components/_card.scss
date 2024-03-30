@@ -1,0 +1,64 @@
+
+.card {
+  height: 275px;
+  overflow: hidden;
+  position: relative;
+  .card-body {
+    .card-title {
+      @include styleText($color-black-0, $font-size-0, $font-weight-1);
+    }
+    .card-text {
+      @include styleText($color-gray-0, $font-size-1 - 1, $font-weight-0);
+      margin-bottom: $mg-0;
+    }
+    .course__rating {
+      i {
+        @include styleText($color-yellow-0, $font-size-1 - 1,$font-weight-3);
+      }
+      span:nth-child(2) {
+        @include styleText($color-gray-0, $font-size-1,$font-weight-1);
+      }
+      span:nth-child(3) {
+        @include styleText($color-gray-0, $font-size-1,$font-weight-0);
+      }
+    }
+    .course__price {
+      position: absolute;
+      bottom: $mg-0;
+      right: $mg-2;
+      text-align: right;
+      span:first-child {
+        @include styleText($color-gray-0, $font-size-1,$font-weight-0);
+        text-decoration: line-through;
+      }
+      span:last-child {
+        @include styleText($color-black-0, $font-size-0,$font-weight-1);
+      }
+    }
+  }
+}
+
+.card--feedback {
+  height: 280px;
+  .card-body {
+    padding: 2rem;
+    .card-top {
+      display: flex;
+      margin-bottom: 1rem;
+      .card-avt {
+        margin-right: $mg-2;
+        img{
+          width: $font-size-6;
+          height: $font-size-6;
+          border-radius: 50%;
+        }
+      }
+      .card__name {
+        margin-bottom: 0;
+      }
+    }
+    .card-text {
+      @include styleText($color-black-0,$font-size-0,$font-weight-0);
+    }
+  }
+}
